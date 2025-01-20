@@ -19,6 +19,8 @@ public class exe{
         System.out.println("Enter b: ");
         int b = sc.nextInt();
 
+        sc.close();
+
         System.out.println(m.add(a,b));
         System.out.println(m.mod(a,b));
     }

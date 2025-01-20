@@ -8,6 +8,7 @@ public class Multiples {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Number: ");
         user = sc.nextInt();
+        sc.close();
 
         for(int i = 0; i<10; i++){
             System.out.println(user + " x " + num[i] + " = " + user * num[i]);
