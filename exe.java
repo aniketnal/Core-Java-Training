@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class MET {
     int add (int a, int b) {
         return a + b; 
@@ -10,7 +12,14 @@ class MET {
 public class exe{
     public static void main(String[] args) {
         MET m = new MET();
-        System.out.println(m.add(20,2));
-        System.out.println(m.mod(20,2));
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b: ");
+        int b = sc.nextInt();
+
+        System.out.println(m.add(a,b));
+        System.out.println(m.mod(a,b));
     }
 }
