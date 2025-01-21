@@ -2,6 +2,7 @@ class A{
     int empNo;
     String empName;
     static String company = "TCS";
+    static int count = 0;
 
     public void setemp(int empNo, String empName){
         this.empNo = empNo;
@@ -23,9 +24,16 @@ public class static_keyword{
         a3.setemp(103, "Aniket");
         a1.getemp();
         System.out.println("Company: "+A.company);
+        A.count++;
+        System.out.println("Total Employees: "+A.count);
         a2.getemp();
         System.out.println("Company: "+A.company);
+        A.count++;
+        System.out.println("Total Employees: "+A.count);
         a3.getemp();
         System.out.println("Company: "+A.company);
+        A.count++;
+        System.out.println("Total Employees: "+A.count);
+        
     }
 }
