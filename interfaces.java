@@ -6,6 +6,7 @@ interface client{
 public class interfaces implements client {
     String name;
     int salary;
+    @Override
     public void input(){
         System.out.println("Enter your name: ");
         Scanner sc = new Scanner(System.in);
@@ -17,7 +18,7 @@ public class interfaces implements client {
         sc1.close();
 
     }
-
+    @Override
     public void output(){
         System.out.println("Name: "+name);
         System.out.println("Salary: "+salary);
