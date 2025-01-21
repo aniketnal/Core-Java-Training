@@ -12,6 +12,9 @@ class A{
         System.out.println("Employee No: "+empNo);
         System.out.println("Employee Name: "+empName);
     }
+    static void getcompany(){
+        System.out.println("Company: "+company);
+    }
 }
 
 public class static_keyword{
@@ -23,15 +26,15 @@ public class static_keyword{
         a2.setemp(102, "Moyan");
         a3.setemp(103, "Aniket");
         a1.getemp();
-        System.out.println("Company: "+A.company);
+        A.getcompany();
         A.count++;
         System.out.println("Total Employees: "+A.count);
         a2.getemp();
-        System.out.println("Company: "+A.company);
+        A.getcompany();
         A.count++;
         System.out.println("Total Employees: "+A.count);
         a3.getemp();
-        System.out.println("Company: "+A.company);
+        A.getcompany();
         A.count++;
         System.out.println("Total Employees: "+A.count);
         
