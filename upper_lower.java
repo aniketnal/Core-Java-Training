@@ -12,11 +12,8 @@ public class upper_lower{
             }
             else if(c[i] >= 97 && c[i] <= 122){
                 lower++;
-
             }
-
         }
-
         if(upper >0 && lower > 0){
             System.out.println("The string contains both upper and lower case letters");
         }
