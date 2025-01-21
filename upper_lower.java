@@ -1,4 +1,3 @@
-import java.util.Arrays;
 public class upper_lower{
     public static void main(String[] args){
         String str = "dsadsda";
