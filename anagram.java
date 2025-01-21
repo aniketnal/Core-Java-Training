@@ -2,6 +2,8 @@ public class anagram{
     public static void main(String[] args){
         String a = "cat";
         String b = "act";
+        a.toLowerCase();
+        b.toLowerCase();
         boolean isAnagram = false;
         boolean isVisited[] = new boolean[b.length()];
         for(int i=0; i<a.length(); i++){
