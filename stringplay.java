@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class stringplay{
     public static void main(String[] args){
         StringBuffer str = new StringBuffer("software");
