@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class runtime_gd {
+public class runtime_gd{
     
     public static void main(String[] args){
         Runtime r = Runtime.getRuntime();
@@ -8,7 +8,7 @@ public class runtime_gd {
         System.out.println(r.freeMemory());
         // r = null;
         // System.gc();
-        for(int i=0; i<10000; i++){
+        for(int i=0; i<1000000; i++){
             Date d = new Date();
             d = null;
 
