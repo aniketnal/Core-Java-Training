@@ -1,6 +1,6 @@
 public class upper_lower{
     public static void main(String[] args){
-        String str = "dsadsda";
+        String str = "ABC";
         char[] c = str.toCharArray();
         int upper = 0;
         int lower = 0;
@@ -17,10 +17,10 @@ public class upper_lower{
             System.out.println("The string contains both upper and lower case letters");
         }
         else if(upper > 0){
-            System.out.println("The string contains only upper case letters");
+            System.out.println("The string contains " + upper + " upper case letters");
         }
         else if(lower > 0){
-            System.out.println("The string contains only lower case letters");
+            System.out.println("The string contains " + lower + " lower case letters");
 
         }
         else{
