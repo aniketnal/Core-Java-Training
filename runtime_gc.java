@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class runtime_gd{
+public class runtime_gc{
     
     public static void main(String[] args){
         Runtime r = Runtime.getRuntime();
