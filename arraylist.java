@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class arraylist {
     public static void main(String[] args){
+        // deafault parameter of the arraylist in java id object but it is a good sractice to specify it as it avoids type issue (runtime error)
         ArrayList<Object> arr = new ArrayList<>();
         arr.add("mohit");
         arr.add('a');
