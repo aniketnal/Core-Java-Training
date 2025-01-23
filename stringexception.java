@@ -10,15 +10,26 @@
 //     }
 // }
 
+// public class stringexception {
+//     public static void main(String[] args) {
+//         stringexception obj = new stringexception();
+//         obj.equals("patil");
+//     }
+
+//     public boolean isEmpty(Object obj) {
+//         String s = "moyan";
+//         System.out.println(s.equals(obj));
+//         return s.equals(obj);
+//     }
+// }
+
+// isEmpty() method 
 public class stringexception {
     public static void main(String[] args) {
-        stringexception obj = new stringexception();
-        obj.equals("patil");
+        String s = "mohit";
+        System.out.println(s.isEmpty());
+        String s1 = "";
+        System.out.println(s1.isEmpty());
     }
 
-    public boolean equals(Object obj) {
-        String s = "moyan";
-        System.out.println(s.equals(obj));
-        return s.equals(obj);
-    }
 }
