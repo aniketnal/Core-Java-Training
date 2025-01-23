@@ -24,12 +24,31 @@
 // }
 
 // isEmpty() method 
-public class stringexception {
-    public static void main(String[] args) {
-        String s = "mohit";
-        System.out.println(s.isEmpty());
-        String s1 = "";
-        System.out.println(s1.isEmpty());
-    }
+// public class stringexception {
+//     public static void main(String[] args) {
+//         String s = "mohit";
+//         System.out.println(s.isEmpty());
+//         String s1 = "";
+//         System.out.println(s1.isEmpty());
+//     }
 
+// }
+
+// replace() method
+// public class stringexception {
+//     public static void main(String[] args){
+//         String s = "mohit";
+//         System.out.println(s.replace('m', 'n'));
+//         String s1 = "ajinkya";
+//         System.out.println(s1.replace('a', 'b'));
+//     }
+
+// }
+
+// SUbstring() method
+public class stringexception {
+    public static void main(String[] args){
+        String s = "morohit";
+        System.out.println(s.substring(2));
+    }
 }
