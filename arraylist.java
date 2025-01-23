@@ -36,6 +36,7 @@ public class arraylist {
         // }
         
         SortedSet<Integer> arr = new TreeSet<>();
+        arr.add(null);
         arr.add(2);
         arr.add(1);
         arr.add(4);

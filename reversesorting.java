@@ -9,6 +9,7 @@ class myComparator implements Comparator<Integer> {
 public class reversesorting{
     public static void main(String[] args){
         TreeSet<Integer> arr = new TreeSet<>(new myComparator());
+        arr.add(null);
         arr.add(20);
         arr.add(3);
         arr.add(1);
