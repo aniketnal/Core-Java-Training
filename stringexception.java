@@ -45,10 +45,16 @@
 
 // }
 
-// SUbstring() method
+// Substring() method
+// public class stringexception {
+//     public static void main(String[] args){
+//         String s = "morohit";
+//         System.out.println(s.substring(2));
+//     }
+// }
 public class stringexception {
     public static void main(String[] args){
         String s = "morohit";
-        System.out.println(s.substring(2));
+        System.out.println(s.indexOf('t'));
     }
 }
