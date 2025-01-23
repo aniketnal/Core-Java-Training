@@ -1,4 +1,3 @@
-import java.lang.*;
 public class threads extends Thread {
     // this needs to be overriden, else nothing happens when the thread is started
     @Override
