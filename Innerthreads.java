@@ -29,18 +29,18 @@
 // }
 
 public class Innerthreads implements Runnable {
-    public void run(){
+    public synchronized void run(){
         for(int i=0; i<3; i++){
             System.out.println(Thread.currentThread().getName()+ " Value "+i);
         }
-        int num = 10;
-        System.out.println(num + 10);
-        System.out.println(num - 5);
-        System.out.println("------------------------------------------------");
+        // int num = 10;
+        // System.out.println(num + 10);
+        // System.out.println(num - 5);
+        // System.out.println("------------------------------------------------");
 
-        for(int i = 0; i < 10; i++){
-            System.out.println(5*i);
-        }
+        // for(int i = 0; i < 10; i++){
+        //     System.out.println(5*i);
+        // }
     }
 
     public static void main(String[] args) {
@@ -52,9 +52,9 @@ public class Innerthreads implements Runnable {
         System.out.println("Minimum priority of a thread: " + Thread.MIN_PRIORITY);
         System.out.println("Normal priority of a thread: " + Thread.NORM_PRIORITY);
         System.out.println("Mamximun priority of a thread: " + Thread.MAX_PRIORITY);
-        t1.setPriority(5);
+        // t1.setPriority();
         t1.start();
-        t2.setPriority(2);
+        // t2.setPriority(2;
         t2.start();
     }
     
