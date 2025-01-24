@@ -1,5 +1,7 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.stream.Collector;
+import java.util.Optional;
 // import java.util.List;
 class Employee {
     int id;
@@ -9,6 +11,11 @@ class Employee {
 
     Employee(Department department){
         this.department = department;
+    }
+
+    public String toString(){
+        return "Employee ID: " + id + "\nEmployee Name: " + emp_name + "\nEmployee Salary: " + salary + "\nEmployee Department: " + department.dept_name;
+
     }
 
     public void setEmployee(int id, String emp_name, double salary, Department department) {
@@ -23,7 +30,7 @@ class Employee {
         System.out.println("Employee Name: " + emp_name);
         System.out.println("Employee Salary: " + salary);
         System.out.println("Employee Department: " + department.dept_name);
-        System.out.println("\n");
+        System.out.println("--------------------------------");
     }
 }
 
@@ -48,6 +55,8 @@ class Department{
         System.out.println("Employee ID: " + emp_id);
         System.out.println("Employee Department: " + dept_name);
         System.out.println("\n");
+        System.out.println("--------------------------------");
+
     }
 }
 
@@ -59,11 +68,10 @@ class JAamkaam{
         ArrayList<Department> dept = new ArrayList<>();
 
         Department d = new Department(0,1,"QA");
-        Department d1 = new Department(0,1,"finance");
-        Department d2 = new Department(0,1,"marketing");
-        Department d3 = new Department(0,1,"HR");
-        Department d4 = new Department(0,1,"Software");
-        Department d5 = new Department(0,1,"QC");
+        Department d1 = new Department(0,2,"finance");
+        Department d2 = new Department(0,3,"marketing");
+        Department d3 = new Department(0,4,"HR");
+        Department d4 = new Department(0,5,"Software");
 
         // Department d = new Department(0,1,"cs");
         Employee e = new Employee(d);
@@ -76,35 +84,39 @@ class JAamkaam{
         
         // emp.put(e);
 
-        System.out.println("Employee Details");
         e.setEmployee(1,"Parth",1000,d);
-        e1.setEmployee(1,"Anshul",2000,d);
-        e2.setEmployee(1,"Ajinkya",3000,d);
-        e3.setEmployee(1,"Mohit",4000,d);
-        e4.setEmployee(1,"Ayush",5000,d);
-        System.out.println("Department Details");
-
+        e1.setEmployee(2,"Anshul",2000,d);
+        e2.setEmployee(3,"Ajinkya",3000,d);
+        e3.setEmployee(4,"Mohit",4000,d);
+        e4.setEmployee(5,"Ayush",5000,d);
+        
         emp.add(e);
         emp.add(e1);
         emp.add(e2);
         emp.add(e3);
         emp.add(e4);
         emp.add(e5);
-
+        
         dept.add(d);
         dept.add(d1);
         dept.add(d2);
         dept.add(d3);
         dept.add(d4);
-        dept.add(d5);
-
+        
+        
+        Optional<Employee> list = emp.stream().filter(n -> n.emp_name.equals("Parth")).findFirst();
+        System.out.println("Finding Parth");
+        System.out.println(list.toString()+"\n");
+        
+        System.out.println("Employee Details\n");
         emp.forEach((n) -> {
             n.getEmployee();
         });
+        System.out.println("Department Details\n");
         dept.forEach((n) -> {
             n.getDepartment();
         });
-
+        
         
     }
 }
