@@ -24,6 +24,7 @@ public class secondLargest {
             System.out.print("Enter the element: ");
             Scanner sc = new Scanner(System.in);
             int element = sc.nextInt();
+            sc.close();
             arr[i] = element;
         }
         max(arr);
